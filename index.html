@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <div class="grid-container">
     <nav>
@@ -38,7 +40,33 @@
     </nav>
 
     <header>
+      <!-- TODO: Add search icon to label via CSS -->
+      <div class="search-box">
+        <label for="search"></label>
+        <input type="search" name="search" id="search" autocomplete="off" placeholder="Search" spellcheck="false">
+      </div>
 
+      <!-- TODO: Add bell icon via CSS -->
+      <!-- TODO: Add profile pic -->
+      <div class="user-info">
+        <div class="bell-icon"></div>
+        <!-- img -->
+        <p>Devon Smith</p>
+      </div>
+
+      <div class="profile-container">
+        <!-- img -->
+        <div class="greeting-text">
+          <p>Hi there,</p>
+          <h2>Devon Smith <span>(@Devon)</span></h2>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
     </header>
 
     <main>
@@ -47,4 +75,5 @@
 
   </div>
 </body>
+
 </html>
