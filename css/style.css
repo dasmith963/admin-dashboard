@@ -1,9 +1,10 @@
 :root {
-  --nav-bg-color: #3C6E9A;
-  --nav-list-hover: #F0C993;
   --input-border: #E5E7EB;
   --input-focus: #b0c1f0;
   --btn-hover: #4D5970;
+  --main-bg-color: #e2e8f0;
+  --blue: #3C6E9A;
+  --yellow: #F0C993;
   --black: #252733;
   --white: #ffffff;
   --system-ui: -apple-system, BlinkMacSystemFont,
@@ -51,9 +52,9 @@ a>img {
 }
 
 a:hover {
-  color: var(--nav-list-hover);
+  color: var(--yellow);
   background: #00000037;
-  border-left: 4px solid var(--nav-list-hover);
+  border-left: 4px solid var(--yellow);
   padding-left: 1rem;
   transition: .4s;
 }
@@ -64,7 +65,7 @@ button {
 }
 
 nav {
-  background: var(--nav-bg-color);
+  background: var(--blue);
   color: var(--white);
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -89,6 +90,7 @@ header {
   grid-template-columns: 2fr 1fr;
   gap: 16px;
   padding: 16px 32px;
+  position: relative;
   box-shadow: 0px 1px 6px -1px rgba(0, 0, 0, 0.52);
 }
 
@@ -173,7 +175,7 @@ h2>span {
   font-size: 1.2rem;
   border-radius: 25px;
   padding: 6px 24px;
-  background: var(--nav-bg-color);
+  background: var(--blue);
   color: var(--white);
   transition: .2s;
 }
