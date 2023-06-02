@@ -7,6 +7,7 @@
   --blue: #3C6E9A;
   --yellow: #F0C993;
   --black: #252733;
+  --gray: #6b6969;
   --white: #ffffff;
   --system-ui: -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen",
@@ -190,7 +191,7 @@ h2>span {
   transition: .4s;
 }
 
-main{
+main {
   background: var(--main-bg-color);
   padding: 16px 32px;
   display: grid;
@@ -198,61 +199,78 @@ main{
   gap: 20px;
 }
 
-.card{
+.card {
   background: var(--white);
   padding: 2rem;
   border-radius: 8px;
   line-height: 1.25;
-  box-shadow: -1px 4px 3px -3px rgba(0,0,0,0.63);
+  box-shadow: -1px 4px 3px -3px rgba(0, 0, 0, 0.63);
 }
 
-.projects{
+.card p {
+  color: var(--gray);
+}
+
+.projects {
   grid-area: 1 / 1 / 3 / 2;
 }
 
-h3{
+h3 {
   font-size: 1.3rem;
   font-weight: 500;
   padding-bottom: 12px;
 }
 
-.card-group{
+.card-group {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 250px;
   gap: 20px;
 }
 
-.card-group > .card{
+.card-group>.card {
   display: grid;
   border-left: 8px solid var(--card-border);
   grid-template-rows: auto 1fr auto;
 }
 
-h4{
+.card-group h4 {
   font-size: 1.3rem;
 }
 
-.card-icons{
+.card-icons {
   justify-self: end;
   display: flex;
   gap: 16px;
 }
 
-.card-icons > img{
+.card-icons>img {
   height: 1.5rem;
 }
 
-/* annoucements */
+.announcements li,
+.trending li {
+  padding: 8px;
+}
 
+.announcements li:not(:last-of-type) {
+  border-bottom: 1px solid var(--grey);
+}
 
+.trending li {
+  display: flex;
+  align-items: center;
+}
 
-/* trending */
+.text-wrapper{
+  margin-top: 8px;
+  margin-left: 8px;
+}
 
+.trending p:first-of-type{
+  color: var(--black);
+}
 
-
-/* Images */
-
-.card > li > img {
+.trending img {
   height: 4rem;
 }
