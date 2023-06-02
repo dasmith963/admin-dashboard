@@ -248,8 +248,7 @@ h3 {
   height: 1.5rem;
 }
 
-.announcements li,
-.trending li {
+.announcements li {
   padding: 8px;
 }
 
@@ -257,17 +256,20 @@ h3 {
   border-bottom: 1px solid var(--grey);
 }
 
-.trending li {
+.trending ul{
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trending li {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5px;
   align-items: center;
 }
 
-.text-wrapper{
-  margin-top: 8px;
-  margin-left: 8px;
-}
-
-.trending p:first-of-type{
+.text-wrapper p:first-of-type{
   color: var(--black);
 }
 
