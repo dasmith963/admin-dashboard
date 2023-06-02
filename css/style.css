@@ -253,7 +253,7 @@ h3 {
 }
 
 .announcements li:not(:last-of-type) {
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid var(--gray);
 }
 
 .trending ul{
