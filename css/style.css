@@ -3,6 +3,7 @@
   --input-focus: #b0c1f0;
   --btn-hover: #4D5970;
   --main-bg-color: #e2e8f0;
+  --card-border: #f4b45b;
   --blue: #3C6E9A;
   --yellow: #F0C993;
   --black: #252733;
@@ -187,4 +188,71 @@ h2>span {
 .btn-container button:active {
   background: var(--black);
   transition: .4s;
+}
+
+main{
+  background: var(--main-bg-color);
+  padding: 16px 32px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.card{
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  line-height: 1.25;
+  box-shadow: -1px 4px 3px -3px rgba(0,0,0,0.63);
+}
+
+.projects{
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+h3{
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+.card-group{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 20px;
+}
+
+.card-group > .card{
+  display: grid;
+  border-left: 8px solid var(--card-border);
+  grid-template-rows: auto 1fr auto;
+}
+
+h4{
+  font-size: 1.3rem;
+}
+
+.card-icons{
+  justify-self: end;
+  display: flex;
+  gap: 16px;
+}
+
+.card-icons > img{
+  height: 1.5rem;
+}
+
+/* annoucements */
+
+
+
+/* trending */
+
+
+
+/* Images */
+
+.card > li > img {
+  height: 4rem;
 }
