@@ -11,6 +11,9 @@ Overall I am pleased with the way the site turned out. I still have much to lear
 
 ![](./docs/Dashboard.png)
 
+### Links
+
+- [Live Site](https://dasmith963.github.io/admin-dashboard/)
 
 ## Acknowledgments
 
